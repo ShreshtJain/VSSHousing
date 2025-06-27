@@ -44,7 +44,7 @@
     <header id="header" class="header d-flex align-items-center fixed-top">
    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a th:href="@{/home/}" class="logo d-flex align-items-center">
+      <a th:href="@{/home}" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="/assets/img/logo.png" alt="">
         <h1 class="sitename">VSS<span>Housing</span></h1>
@@ -52,11 +52,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a th:href="@{/home/}">Home</a></li>
-          <li><a th:href="@{/home/about}" class="active">About</a></li>
-          <li><a th:href="@{/home/services}">Services</a></li>
-          <li><a th:href="@{/home/properties}">Properties</a></li>
-          <li><a th:href="@{/home/agents}">Agents</a></li>
+          <li><a th:href="@{/home}">Home</a></li>
+          <li><a th:href="@{/about}" class="active">About</a></li>
+          <li><a th:href="@{/services}">Services</a></li>
+          <li><a th:href="@{/properties}">Properties</a></li>
+          <li><a th:href="@{/agents}">Agents</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -74,7 +74,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a th:href="@{/home/contact}">Contact</a></li>
+          <li><a th:href="@{/contact}">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -99,7 +99,7 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a th:href="@{/home/}">Home</a></li>
+            <li><a th:href="@{/home}">Home</a></li>
             <li class="current">About</li>
           </ol>
         </div>
