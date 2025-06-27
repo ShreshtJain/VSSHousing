@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/home")
 public class HomeController {
 	
-    @GetMapping("/")
+    @GetMapping({ "", "/" })
     public String home(Model model) {
         model.addAttribute("message", "Hello from Spring!");
         return "index"; // loads templates/home.html
