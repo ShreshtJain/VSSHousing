@@ -55,12 +55,14 @@
       body: formData,
       headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
-    .then(response => {
+    .then(async response => {
       if( response.ok ) {
         return response.text();
       } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
-      }
+      // If Spring sends 400 with validation errors
+      const errorText = await response.text();
+          throw new Error(errorText);
+    }
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');

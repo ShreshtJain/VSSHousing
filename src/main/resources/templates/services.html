@@ -39,7 +39,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a th:href="@{/home/}" class="logo d-flex align-items-center">
+      <a th:href="@{/home}" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="/assets/img/logo.png" alt=""> 
         <h1 class="sitename">VSS<span>Housing</span></h1>
@@ -47,11 +47,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a th:href="@{/home/}">Home</a></li>
-          <li><a th:href="@{/home/about}">About</a></li>
-          <li><a th:href="@{/home/services}" class="active">Services</a></li>
-          <li><a th:href="@{/home/properties}">Properties</a></li>
-          <li><a th:href="@{/home/agents}">Agents</a></li>
+          <li><a th:href="@{/home}">Home</a></li>
+          <li><a th:href="@{/about}">About</a></li>
+          <li><a th:href="@{/services}" class="active">Services</a></li>
+          <li><a th:href="@{/properties}">Properties</a></li>
+          <li><a th:href="@{/agents}">Agents</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -69,7 +69,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a th:href="@{/home/contact}">Contact</a></li>
+          <li><a th:href="@{/contact}">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -96,7 +96,7 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a th:href="@{/home/}">Home</a></li>
+            <li><a th:href="@{/home}">Home</a></li>
             <li class="current">Services</li>
           </ol>
         </div>
@@ -115,7 +115,7 @@
               <div class="icon">
                 <i class="bi bi-activity"></i>
               </div>
-              <a th:href="@{/home/service-details}" class="stretched-link">
+              <a th:href="@{/services/service-details}" class="stretched-link">
                 <h3>Construction Service</h3>
               </a>
               <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
@@ -127,7 +127,7 @@
               <div class="icon">
                 <i class="bi bi-broadcast"></i>
               </div>
-              <a th:href="@{/home/service-details}" class="stretched-link">
+              <a th:href="@{/services/service-details}" class="stretched-link">
                 <h3>Farmhouse Construction Service</h3>
               </a>
               <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
@@ -139,7 +139,7 @@
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
-              <a th:href="@{/home/service-details}" class="stretched-link">
+              <a th:href="@{/services/service-details}" class="stretched-link">
                 <h3>Interior Designing Services</h3>
               </a>
               <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
@@ -151,11 +151,11 @@
               <div class="icon">
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
-              <a th:href="@{/home/service-details}" class="stretched-link">
+              <a th:href="@{/services/service-details}" class="stretched-link">
                 <h3>Joint Venture Construction Service</h3>
               </a>
               <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a th:href="@{/home/service-details}" class="stretched-link"></a>
+              <a th:href="@{/services/service-details}" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -164,11 +164,11 @@
               <div class="icon">
                 <i class="bi bi-calendar4-week"></i>
               </div>
-              <a th:href="@{/home/service-details}" class="stretched-link">
+              <a th:href="@{/services/service-details}" class="stretched-link">
                 <h3>Construction Service</h3>
               </a>
               <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a th:href="@{/home/service-details}" class="stretched-link"></a>
+              <a th:href="@{/services/service-details}" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -177,11 +177,11 @@
               <div class="icon">
                 <i class="bi bi-chat-square-text"></i>
               </div>
-              <a th:href="@{/home/service-details}" class="stretched-link">
+              <a th:href="@{/services/service-details}" class="stretched-link">
                 <h3>Architecture Services</h3>
               </a>
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a th:href="@{/home/service-details}" class="stretched-link"></a>
+              <a th:href="@{/services/service-details}" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
