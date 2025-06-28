@@ -22,4 +22,10 @@ public class PropertiesController {
         return "property-single"; // loads templates/property-single.html
     }
 
+    @GetMapping("/property-single2")
+    public String propertySingle2(Model model) {
+        model.addAttribute("message", "Hello from Spring!");
+        return "property-single2"; // loads templates/property-single.html
+    }
+
 }
